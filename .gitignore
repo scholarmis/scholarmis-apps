@@ -1,0 +1,26 @@
+# python
+*.pyc
+*__pycache__
+.pytest_cache
+.venv
+venv
+
+# dist
+dist
+
+# environment
+.env
+!.env.example
+
+# npm
+node_modules
+package-lock.json
+
+# ide
+.idea
+.vscode
+**/*.DS_Store
+
+# database
+db.sqlite3
+

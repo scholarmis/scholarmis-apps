@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scholarmis-apps"
+version = "1.0.0"
+description = "Scholarmis Apps"
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = ["scholarmis-apps"]
+authors = [
+    {name = "Brian Simpokolwe", email = "briansimpokolwe@gmail.com"}
+]
+
+classifiers = [
+    "Framework :: Django",
+    "Framework :: Django :: 5.0",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "scholarmis-framework>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/scholarmis/scholarmis-apps"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scholarmis/apps"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
