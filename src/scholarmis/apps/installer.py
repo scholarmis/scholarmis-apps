@@ -419,4 +419,4 @@ class AppInstaller:
             self.load_settings()
             self.load_tasks()
         except Exception as e:
-            log_error(e)
+            pass
